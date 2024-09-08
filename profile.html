@@ -10,43 +10,43 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
+            text-align: center;
+            overflow: hidden; /* 防止出现滚动条 */
         }
 
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #333;
-            border-radius: 8px;
-            margin-top: 10px;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         .text {
             font-size: 24px;
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 15px; /* 增加间距 */
+            font-weight: bold; /* 加粗文字 */
         }
-        
-        h1 {
-            font-size: 36px;
-            color: #333;
+
+        img {
+            max-width: 90%;
+            height: auto;
+            border: 3px solid #333; /* 增加边框宽度 */
+            border-radius: 12px; /* 增加圆角 */
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="text">约约 kisskiss</div>
-        <img src="Figure1.gif" alt="个人照片">
+        <div class="text">这里是中间正上方的文字</div>
+        <img src="Figure1.gif" alt="个人动图">
     </div>
 
 </body>
